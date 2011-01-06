@@ -1,0 +1,26 @@
+<% if signed_in? %>
+<table class="profile_tab">
+	<tr>
+		<td class="profile">
+			<h1>What's up?</h1>
+			<%= render 'shared/micropost_form' %><br />
+			<%= render 'shared/feed' %>
+		</td>
+    	<td class="sidebar bigger">
+			<%= render 'shared/user_info' %>
+			<%= render 'shared/stats' %>
+		</td>
+	</tr>
+</table>
+<% else %>
+<h1>Sample App</h1>
+<p>
+  This is the home page for the
+  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+</p>
+<div class="centered">
+	<h1><%= link_to "Sign up now!", signup_path, :class => "signup_button round" %></h1>
+</div>
+<% end %>
+

@@ -1,0 +1,10 @@
+<li>
+	<%= gravatar_for user, :size => 30 %>
+	<%= link_to user.name, user %>
+	<% if defined? current_user.admin? and current_user.admin? %>
+		<span style="float: right; margin-top: 4px">
+			<%= link_to "delete", user, :method => :delete, :confirm => "You sure?", :title => "Delete #{user.name}" %>
+		</span>
+	<% end %>
+</li>
+

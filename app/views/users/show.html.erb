@@ -1,0 +1,30 @@
+<table class="profile_tab">
+	<tr>
+		<td class="profile">
+			<h1>
+				<%= @user.name %>
+			</h1>
+			<div class="bigger">
+				<%= @user.email %>
+			</div>
+			<br />
+			<%= render 'follow_form' if signed_in? %>
+			<br />
+			<% unless @user.microposts.empty? %>
+	        <table class="microposts">
+	        	<%= render @microposts %>
+	        </table>
+	        <%= will_paginate @microposts %>
+	      	<% end %>
+		</td>
+    	<td class="sidebar bigger">
+			<div class="centered"><%= gravatar_for @user %></div>
+			<strong>Name:</strong> <%= @user.name %><br />
+			<strong>URL:</strong>  <%= link_to user_path(@user), @user %><br />
+		    <span class="microposts">
+      			<%= pluralize(current_user.microposts.count, "micropost") %>
+		    </span>
+		</td>
+	</tr>
+</table>
+

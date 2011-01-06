@@ -1,0 +1,26 @@
+<table class="profile_tab">
+	<tr>
+		<td class="profile bigger">
+			<h1><%= @title %></h1>
+			<% unless @users.empty? %>
+			<ul class="users list">
+				<%= render @users %>
+			</ul>
+			<%= will_paginate @users %>
+			<% end %>
+		</td>
+    	<td class="sidebar bigger">
+			<%= render 'shared/user_info' %>
+			<%= render 'shared/stats' %>
+			<br />
+			  <% unless @users.empty? %>
+			  	<div class="gravatar_box">
+				<% @users.each do |user| %>
+				  <%= link_to gravatar_for(user, :size => 30), user %>
+				<% end %>
+				</div>
+			  <% end %>
+		</td>
+	</tr>
+</table>
+

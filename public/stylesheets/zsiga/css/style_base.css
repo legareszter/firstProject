@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+* {
+/*
+	border: 1px solid magenta;
+/* ez csak debughoz kell */
+}
+
+html {
+	height: 100%;
+	position: relative;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/body_bg.jpg');
+	background-repeat: repeat-x;
+	background-color: #dfdfdf;
+}
+hr {
+	margin: 0;
+	margin-top: -20px;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 14px 0px;
+	color: #dfdfdf;
+	font-family: Ubuntu, "Segoe UI", "Trebuchet MS";
+	font-weight: normal;
+	text-shadow: #000000 0px 3px 2px;	
+}
+
+table.kozh {
+	width: 500px;
+	margin: 0px auto;
+	color: #c8c8c8;
+	font-size: 12px;
+}
+
+#menubar {
+	height: 133px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/menubar_bg.jpg');
+	background-repeat: repeat-x;
+	z-index: 2;
+}
+
+#menu_logo_text {
+	display: inline-block;
+	color: #fbf4aa;
+	font-family: Ubuntu, "Segoe UI", "Trebuchet MS";
+	font-weight: normal;
+	text-shadow: #000000 0px 5px 5px;
+	font-size: 250%;
+	float: left;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 30%;
+}
+
+#menu {
+	width: 782px;
+	margin: 0px auto 0px;
+	padding: 90px 40px 0 0;
+	color: #d2d2d2;
+	font-family: "Trebuchet MS";
+	font-size: 16;
+	text-align: right;
+}
+#menu a:link, #menu a:visited {
+	color: #d2d2d2;
+	text-decoration: none;
+}
+#content a:link, #content a:visited {
+	color: white;
+	text-decoration: none;
+}
+#menu a:hover, #menu a:active, #content a:hover, #content a:active {
+	color: #fbf4aa;
+	text-decoration: underline;
+}
+
+#content {
+	min-height: 100px;
+	width: 782px;
+	margin: 0 auto;
+	padding: 0 24px 20px;
+/*	background-color: #393838; */
+	background-image: url('../img/content_bg.png');
+	background-repeat: repeat-y;
+	z-index: 0;
+	color: #c8c8c8;
+	font-family: "Verdana";
+	font-size: 12px;
+	text-align: justify;
+}
+
+.padder {
+	padding: 0px 40px 0px;
+	margin: 0px 0px 20px;
+}
+
+#footer {
+	height: 80px;
+	width: 740px;
+	margin: 30px auto -20px;
+	padding: 10px 20px;
+	background-color: #210707;
+	color: #b2b1b1;
+	font-family: "Verdana";
+	font-size: 12px;
+	z-index: 0;
+}
+
+.h_shadow {
+	height: 40px;
+	width: auto;
+	margin-bottom: -40px;
+	padding: 0;
+/*	background-image: url('../img/shadow_horizontal.png');
+	background-repeat: repeat-x; */
+	z-index: 1;
+}
+#bottom_shadow {
+	height: 24px;
+	width: 830px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('../img/shadow_bottom.png');
+	background-repeat: no-repeat;
+}
+
+.box {
+	margin: 0px 0px 20px;
+}
+.date {
+	margin-top: -38px;
+	float: right;
+}
+.bigger {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.list {
+	list-style: none;
+	padding-right: 40px;
+}
+.list li {
+	height: 40px;
+	padding: 10px 10px 0px;
+	margin: 0px;
+}
+.list li:nth-child(odd) {
+	background: #555454
+}
+.list li:nth-child(even) {
+}
+
+.right {
+	float: right;
+}
+
+.ea_thumb, #ea_pic {
+	border: 1px solid #5f5f5f;
+}
+#ea_pic {
+	display: block;
+	margin: 10px auto 20px;
+}
+#ea_pic_lnk {
+	display: block;
+	margin: 20px;
+	text-align: center;
+}
+.ea_text {
+	display: block;
+	line-height: 18px;
+}
+.ea_list_text {
+	display: inline-block;
+	float: right;
+	width: 72%;
+}
+.ea_info {
+	display: inline-block;
+	font-size: 14px;
+}
+table {
+	width: 320px;
+	margin-right: 30px;
+}
+#ea_table_left {
+	width: 300px;
+/*	float: right;*/
+}
+.slider_title {
+	color: #fbf4aa;
+	font-size: 24px;
+	font-family: "Trebuchet MS";
+	font-weight: normal;
+	text-shadow: #000000 0px 3px 2px;
+	margin-bottom: 10px;
+}
+
+.slider_text {
+	width: 350px;
+	font-size: 14px;
+	font-family: "Trebuchet MS";
+	overflow: hidden;
+}
+
+#ea_list {
+	list-style: none;
+}
+#ea_list a:hover {
+	text-decoration: none;
+}
+#ea_list li {
+	height: 150px;
+	margin: 20px 0px;
+	border-bottom: 1px solid #5f5f5f;
+}
+#gal_list {
+	list-style: none;
+}
+#gal_list li {
+	margin-bottom: 14px;
+}
+
+.centered {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+
+.profile_tab {
+	width: 100%;
+}
+.sidebar {
+	width: 30%;
+	line-height: 24px;
+	vertical-align: top;
+	padding-top: 40px;
+}
+
+.param {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+.field {
+	display: inline-block;
+	width: 200px;
+}
+
+.message {
+	margin: 0px;
+	background-color: grey;
+	color: #fbf4aa;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.gravatar_box {
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 5px;	
+}
+
